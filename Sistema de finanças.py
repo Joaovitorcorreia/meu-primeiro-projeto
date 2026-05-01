@@ -86,9 +86,7 @@ def main():
             print("Opção inválida. Tente novamente.")
 
 if __name__ == "__main__":
-
     main()  
-
 
     print("Programa encerrado. Obrigado por usar o sistema de finanças!")
 
