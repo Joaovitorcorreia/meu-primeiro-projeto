@@ -3,7 +3,7 @@ transacoes = []
 
 def adicionar_transacao():
 
-    tipo= input("Digite o tipo da transação (entrada/saída): ").strip().lower()
+    tipo = input("Digite o tipo da transação (entrada/saída): ").strip().lower()
 
     if tipo in ["entrada", "entrada"]:
         tipo = "entrada"
@@ -63,38 +63,27 @@ def main():
     while True:
 
         print("\n1. Adicionar Transação")
-
         print("2. Exibir Transações")
-
         print("3. Calcular Saldo")
-
         print("4. Sair")
         
-
         escolha = input("Escolha uma opção: ")
         
 
         if escolha == "1":
-
             adicionar_transacao()
 
         elif escolha == "2":
-
             exibir_transacoes()
 
         elif escolha == "3":
-
             saldo = calcular_saldo()
-
             print(f"Saldo atual: R${saldo:.2f}")
 
         elif escolha == "4":
-
             break
         else:
-
             print("Opção inválida. Tente novamente.")
-
 
 if __name__ == "__main__":
 
